@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Input Tag</legend>
+            <ul>
+                <li>
+                    <label for="text">TEXT</label>
+                    <input type="text" id="text" required> 
+                    <!--required 필수로 채워야하는값-->
+                </li>
+                <li>
+                    <label for="email">이메일</label>
+                    <input type="email" id="email">
+                    <!--이메일 형식인지 유효성체크 해줌-->
+                </li>
+                <li>
+                    <label for="tel">전화번호</label>
+                    <input type="tel" id="tel">
+                    <!--tel는 모바일에서 숫자 키패드 올라임-->
+                </li>
+                <li>
+                    <label for="url">url</label>
+                    <input type="url" id="url">
+                    <!--url형식인지 유효성체크 해줌-->
+                </li>
+                <li>
+                    <label for="number">number</label>
+                    <input type="number" id="number" required min="5" max="10">
+                    <!--최대 최소값 설정 가능-->
+                </li>
+                <li>
+                    <label for="range">range</label>
+                    <input type="range" id="range">
+                    <!--최대 최소값 설정 가능-->
+                </li>
+                <li>
+                    <label for="password">password</label>
+                    <input type="password" id="password" required>
+                    <!--최대 최소값 설정 가능-->
+                </li>
+                
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>날짜 관련</legend>
+            <ul>
+                <li>
+                    <label for="date">date</label>
+                    <input type="date" id="date">
+                    <!--범위 설정 가능-->
+                </li>
+                <li>
+                    <label for="month">month</label>
+                    <input type="month" id="month">
+                    <!--범위 설정 가능-->
+                </li>
+                <li>
+                    <label for="week">week</label>
+                    <input type="week" id="week">
+                    <!--범위 설정 가능-->
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>시간 관련</legend>
+            <ul>
+                <li>
+                    <label for="time">time</label>
+                    <input type="time" id="time" min="16:00" max="18:00">
+                    <!--범위 설정 가능-->
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>그 외</legend>
+            <input type="file"/>
+            <!--multple하면 파일 여러개 선택 가능-->
+            <input type="hidden" name="" value="">
+            <!--서버 측으로 어떤 값을 전달할때 사용-->
+        </fieldset>
+        <input type="submit" value="제출하기">
+    </form>
+</body>
+</html>
