@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=ㄹ, initial-scale=1.0">
+    <title>radio checkbox</title>
+</head>
+<body>
+    <form action="/signup">
+        <fieldset>
+            <legend>좋아하는 색상 선택</legend>
+            <ul>
+                <li>
+                    <label for="red">빨강</label>
+                    <input type="checkbox" id="red" value="red">
+                </li>
+                <li>
+                    <label for="org">주황</label>
+                    <input type="checkbox" id="org" value="org">
+                </li>
+                <li>
+                    <label for="grr">r초록</label>
+                    <input type="checkbox" id="grr" value="grr">
+                </li>
+                <li>
+                    <label for="blue">파랑</label>
+                    <input type="checkbox" id="blue" value="blue">
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <ul>
+                <li>
+                    <label for="no-free">유료</label>
+                    <input type="radio" name="delivery" id="no-free" value="no-free">
+                </li>
+                <li>
+                    <label for="free">무료</label>
+                    <input type="radio" name="delivery" id="free" value="free">
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>자기소개서</legend>
+            <textarea id="" name="" cols="10" rows="5">하하</textarea>
+        </fieldset>
+        <fieldset>
+            <legend>주문할 상품을 선택해주세요</legend>
+            <ul>
+                <li>
+                    <select name="goods" id="goods">
+                        <option value="apple10kg">사과10kg</option>
+                        <option value="apple20kg">사과20kg</option>
+                        <option value="apple30kg">사과30kg</option>
+                    </select>
+                </li>
+                <li>
+                    <label for="ice-cream-choice">맛 선택</label>
+                    <input list="ice-cream-flavors" id="icecream-choice" name="icecream-choice">
+                    <datalist id="ice-cream-flavors">
+                        <option value="choco">부가 설명?</option>
+                        <option value="mint">부가 설명?</option>
+
+                    </datalist>
+                </li>
+            </ul>
+            <input type="submit" value="제출하기">
+            <button type="submit">제출하기</button>
+        </fieldset>
+        <button type="submit">제출하기</button>
+        <!--form에 속성중 action에 있는 url로 데이터를 제출한다는 뜻-->
+        <button type="reset">리셋</button>
+        <button type="button" onclick="alert('Hello world!')">버튼</button>
+    </form>
+</body>
+</html>
